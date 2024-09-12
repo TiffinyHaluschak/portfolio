@@ -17,7 +17,9 @@ app.use(express.static('public')); // Assumes my front-end files are stored in '
 
 // Contact form route
 app.post('/send', (req, res) => {
+    console.log(req.body); // Log the entire request body
     const { name, email, message } = req.body;
+    console.log(`Form data received: Name - ${name}, Email - ${email}, Message - ${message}`);
 
     // Set up Nodemailer transporter
     const transporter = nodemailer.createTransport({
