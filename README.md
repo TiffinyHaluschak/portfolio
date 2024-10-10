@@ -17,8 +17,11 @@ cd portfolio
 3. Open the 'index.html' file in your browser
 
 ## Features
-1. Contact Form with JavaScript Validation
-- Set up a Node.js backend to handle the contact form. I also used Express.js, a lightweight web framework for Node.js, to simplify routing and handle form submissions.
+1. Contact Form 
+- Because GitHub Pages is a static hosting service, this means it does not support server-side processing.
+  So I use a third-party service that can handle form submissions from static sites. I will be using Formspree.
+  Formspree acts as a backend for my contact form, allowing me to collect form data and receive emails without 
+  setting up my own server.
 
 What are the key features of this website? (e.g., responsive layout, project filtering, smooth scrolling).
 
