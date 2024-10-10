@@ -18,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
         // Optionally, send form data to a server or use an email service API
         // For this example, we'll just reset the form
-        //document.getElementById('contactForm').reset();
+        document.getElementById('contactForm').reset();
     }
 });
 

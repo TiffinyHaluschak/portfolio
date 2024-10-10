@@ -32,7 +32,7 @@ app.post('/send', (req, res) => {
 
     const mailOptions = {
         from: email, // Sender's email
-        to: 'tiffiny.haluschak@gmail.com', 
+        to: process.env.GMAIL_USER,
         subject: `New Contact Form Submission from ${name}`,
         text: `You have a new message from ${name} (${email}):\n\n${message}`,
     };
