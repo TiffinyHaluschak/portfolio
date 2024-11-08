@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - My Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Tiffiny Haluschak</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header-container">
+                <h1>Tiffiny Haluschak</h1>
+                 <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
 
-    <main>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbljrnyp" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <main>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbljrnyp" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
-            <p id="formMessage"></p>
-        </section>
-    </main>
+                    <button type="submit">Send</button>
+                </form>
+                <p id="formMessage"></p>
+            </section>
+        </main>
+    </div>
 
-    <footer>
+    <footer id = "footer">
         <p>&copy; 2024 Tiffiny Haluschak</p>
     </footer>
 

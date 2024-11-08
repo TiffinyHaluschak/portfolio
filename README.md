@@ -29,9 +29,6 @@ What are the key features of this website? (e.g., responsive layout, project fil
  - Front-end: 
     - HTML/CSS: For structure and styling.
     - Javascript: To add interactivity.
-    - Frameworks/Libraries (optional):
-        - React.js: For building a dynamic, component-based UI.
-        - Vue.js or Angular: Alternative front-end frameworks.
 - Back-end:
     - 
 - Deployment:
