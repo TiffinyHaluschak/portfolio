@@ -139,23 +139,6 @@ footer {
     /*border-top: 1px solid var(--border-color);*/
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-    }
-
-    main {
-        width: 100%;
-    }
-}
-
 /* Hide menu toggle button on desktop */
 .menu-toggle {
     display: none;
@@ -173,13 +156,17 @@ footer {
     }
 
     /* Hide navigation by default */
-    .header-container nav {
+    .sidebar {
         display: none;
     }
 
-    /* Show navigation when active */
-    .header-container nav.active {
+    /* Show sidebar when active */
+    .sidebar.active {
         display: block;
+    }
+
+    .container {
+        flex-direction: column;
     }
 }
 

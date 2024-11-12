@@ -47,10 +47,10 @@ function validateEmail(email) {
 
 // Responsive menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.header-container nav');
+const sidebar = document.querySelector('.sidebar');
 
-if (menuToggle && nav) {
+if (menuToggle && sidebar) {
     menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
+        sidebar.classList.toggle('active');
     });
 }
