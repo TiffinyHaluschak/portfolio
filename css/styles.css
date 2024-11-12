@@ -88,6 +88,11 @@ main section {
 
 main h2 {
     margin-top: 0;
+    font-size: 30px;
+}
+
+main p {
+    font-size: 20px;
 }
 
 .contact-form {
