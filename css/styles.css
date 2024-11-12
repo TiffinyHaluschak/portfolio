@@ -90,6 +90,46 @@ main h2 {
     margin-top: 0;
 }
 
+.contact-form {
+    max-width: 900px;
+    margin: 50px auto; /* Centers the form horizontally */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 /* Footer Styles */
 footer {
     background-color: #fff;
@@ -115,3 +155,31 @@ footer {
         width: 100%;
     }
 }
+
+/* Hide menu toggle button on desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    /* Hide navigation by default */
+    .header-container nav {
+        display: none;
+    }
+
+    /* Show navigation when active */
+    .header-container nav.active {
+        display: block;
+    }
+}
+
