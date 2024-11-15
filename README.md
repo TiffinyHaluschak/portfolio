@@ -4,8 +4,7 @@ Tiffiny Haluschak Portfolio Website
 https://tiffinyhaluschak.github.io/portfolio/
 
 ## Description
-This website is to be used to display Tiffiny Haluschak's projects and to showcase her coding abilites for any
-future employers.
+This website is to be used to display Tiffiny Haluschak's projects and to showcase her coding abilites.
 
 ## Installation
 1. Clone the repository:
@@ -29,9 +28,7 @@ What are the key features of this website? (e.g., responsive layout, project fil
  - Front-end: 
     - HTML/CSS: For structure and styling.
     - Javascript: To add interactivity.
-- Back-end:
+ - Back-end:
     - 
 - Deployment:
     - GitHub Pages
-
-## Acknowledgements
