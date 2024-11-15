@@ -39,10 +39,8 @@ cd portfolio
    - Built-in email validation to improve contact form usability.  
 
 ## Technologies Used
- - Front-end: 
+- Front-end: 
     - HTML/CSS: For structure and styling.
     - Javascript: To add interactivity.
- - Back-end:
-    - 
-- Deployment:
-    - GitHub Pages
+- Back-end:
+    - Deployment: GitHub Pages
