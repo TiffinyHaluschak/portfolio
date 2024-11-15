@@ -16,13 +16,27 @@ cd portfolio
 3. Open the 'index.html' file in your browser
 
 ## Features
-1. Contact Form 
-- Because GitHub Pages is a static hosting service, it does not support server-side processing.
-  So I use a third-party service, Formspree, that can handle form submissions from static sites.
-  Formspree acts as a backend for my contact form, allowing me to collect form data and receive emails without 
-  setting up my own server.
+1. **Responsive Design**  
+   - Adapts seamlessly to different screen sizes, offering an optimal experience on both desktop and mobile devices.  
+   - Includes a collapsible navigation menu for smaller screens.  
 
-What are the key features of this website? (e.g., responsive layout, project filtering, smooth scrolling).
+2. **Portfolio Showcase**  
+   - Dedicated "Projects" page to display and describe key projects with links to their respective GitHub repositories.  
+
+3. **Interactive Contact Form**  
+   - A functional contact form powered by [Formspree](https://formspree.io) to handle form submissions without a custom backend.  
+   - Includes client-side form validation to ensure accurate submissions.  
+
+4. **Modern Styling**  
+   - Clean and consistent layout using CSS variables for customizable themes.  
+   - Includes hover effects and animations to enhance user interaction.  
+
+5. **Accessible Navigation**  
+   - Keyboard and screen-reader-friendly navigation for improved accessibility.  
+
+6. **JavaScript Interactivity**  
+   - Dynamic sidebar menu toggle functionality for mobile navigation.  
+   - Built-in email validation to improve contact form usability.  
 
 ## Technologies Used
  - Front-end: 
