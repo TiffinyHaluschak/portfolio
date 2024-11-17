@@ -18,7 +18,7 @@ cd portfolio
 ## Features
 1. **Responsive Design**  
    - Adapts seamlessly to different screen sizes, offering an optimal experience on both desktop and mobile devices.  
-   - Includes a collapsible navigation menu for smaller screens.  
+   - Includes a seamless page transition flow with blended fade and slide animations, ensuring a smooth and engaging user experience across all pages.
 
 2. **Portfolio Showcase**  
    - Dedicated "Projects" page to display and describe key projects with links to their respective GitHub repositories.  
