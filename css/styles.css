@@ -7,6 +7,26 @@
     --border-color: #ffffffd3;
 }
 
+/* Full screen transition */
+.transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color); 
+    opacity: 0; /* Transparent initially */
+    transform: translateX(-100%); /* Positioned off-screen */
+    transition: transform 0.2s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.transition-overlay.active {
+    transform: translateX(0); /* Slides into view horizontally */
+    opacity: 1; /* Fades in */
+}
+
+
 /* General Styles */
 body {
     font-family: 'Newsreader', Arial, sans-serif;

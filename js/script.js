@@ -1,3 +1,22 @@
+// Full screen transition
+const links = document.querySelectorAll('.dropdown-menu a');
+const overlay = document.querySelector('.transition-overlay');
+
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = event.target.href;
+
+        // Trigger overlay animation
+        overlay.classList.add('active');
+
+        // Navigate after animation completes
+        setTimeout(() => {
+            window.location.href = target;
+        }, 500); // Match this to CSS transition duration
+    });
+});
+
 // Form validation
 const contactForm = document.getElementById('contact-form');
 
