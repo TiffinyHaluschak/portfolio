@@ -99,7 +99,7 @@ header {
     margin: 5px 0;
 }
 
-.dropdown-menu ul li a {
+.dropdown-menu a {
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
@@ -108,7 +108,7 @@ header {
 }
 
 a:hover {
-    text-decoration: underline;    
+    text-decoration: none;    
     background-color: var(--secondary-color);
     border-radius: 4px;
 }
@@ -156,8 +156,8 @@ main h2 {
     margin-top: 150px;
     font-size: 40px;
     border-bottom: 2px solid var(--border-color); /* Adds a line under the heading */    
-    padding-bottom: 10px; /* Adds spacing between the line and the text below */    
-    margin-bottom: 20px; /* Adds spacing between the heading and the following content */
+    padding-bottom: 20px; /* Adds spacing between the line and the text below */    
+    margin-bottom: 30px; /* Adds spacing between the heading and the following content */
 }
 
 main p {
@@ -175,14 +175,8 @@ main p {
     margin-bottom: 10px;
 }
 
-.project a {
-    color: #007acc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project a:hover {
-    text-decoration: underline;
+.more-projects {
+    margin-top: 100px; /* Adjust the value to control spacing */
 }
 
 /* Button for GitHub website */
@@ -203,7 +197,8 @@ main p {
 
 .button-link:hover {
     background-color: var(--secondary-color); /* Change background on hover */
-    color: #fff; /* White text on hover */
+    color: var(--text-color); /* White text on hover */
+    text-decoration: none !important;
 }
 
 /* Contact Form */
@@ -225,16 +220,18 @@ main p {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
+    font-family: 'Newsreader', Arial, sans-serif;
+    font-size: 16px;
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 3px;
 }
 
 .contact-form button[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 12px;
     border: none;
     border-radius: 3px;
@@ -244,7 +241,7 @@ main p {
 }
 
 .contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--secondary-color);
 }
 
 /* Footer Styles */
@@ -264,6 +261,12 @@ footer {
         font-size: 24px;
         cursor: pointer;
         margin-top: 10px;
+    }
+
+    .main {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 3px;
     }
 }
 
