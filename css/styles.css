@@ -4,7 +4,7 @@
     --secondary-color: #0056b3;
     --background-color: #232121;
     --text-color: #f8f4f4;
-    --border-color: #0d0d0d;
+    --border-color: #ffffffd3;
 }
 
 /* General Styles */
@@ -28,26 +28,73 @@ body {
     background-color: var(--background-color);
 }
 
-/* Sidebar Styles */
-.sidebar {
-    width: 250px;
+/* Header and Dropdown Styles */
+header {
+    position: relative;
+    padding: 10px;
     background-color: var(--background-color);
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid var(--border-color);
-    margin-right: 10px;
-    margin-left: 10px;
-    /*border-right: 1px solid var(--border-color);*/
+    border-bottom: 1px solid var(--border-color);
+    display: flex;    
+    justify-content: flex-end; /* Aligns button to the right */
 }
 
-.header-container {
+.menu-toggle {
+    font-size: 16px;
+    color: var(--text-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 101; /* Ensures the button is always on top */
+    top: 10px;
+    right: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
 }
 
-.header-container h1 {
-    margin-top: 0;
+.menu-text {
+    font-family: 'Newsreader', Arial, sans-serif;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin: 5px 0;
+}
+
+.dropdown-menu ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Show dropdown when active */
+.dropdown-menu.active {
+    display: block;
 }
 
 nav ul {
@@ -76,9 +123,11 @@ main {
     padding: 20px;
     box-sizing: border-box;
     background-color: var(--background-color);
-    text-align: right;
+    text-align: left;
     border: 1px solid var(--border-color);
-    margin-right: 10px;
+    margin: 20px auto;
+    max-width: 1300px; /* Limits the width of the main content */    
+    border-radius: 8px; /* Adds rounded corners to the border */
 }
 
 main section {
@@ -87,8 +136,11 @@ main section {
 }
 
 main h2 {
-    margin-top: 0;
-    font-size: 30px;
+    margin-top: 150px;
+    font-size: 40px;
+    border-bottom: 2px solid var(--border-color); /* Adds a line under the heading */    
+    padding-bottom: 10px; /* Adds spacing between the line and the text below */    
+    margin-bottom: 20px; /* Adds spacing between the heading and the following content */
 }
 
 main p {
@@ -116,6 +168,28 @@ main p {
     text-decoration: underline;
 }
 
+/* Button for GitHub website */
+.button-link {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px; /* Adjust padding for size */
+    background-color: var(--primary-color); /* Button background */
+    color: var(--text-color) !important; /* Text color */
+    text-decoration: none; /* Removes underline from link */
+    border: 2px solid var(--primary-color); /* Button border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-link:hover {
+    background-color: var(--secondary-color); /* Change background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Contact Form */
 .contact-form {
     max-width: 900px;
     margin: 50px auto; /* Centers the form horizontally */
@@ -160,14 +234,8 @@ main p {
 footer {
     background-color: var(--background-color);
     color: var(--text-color);
-    text-align: left;
+    text-align: center;
     padding: 10px;
-    /*border-top: 1px solid var(--border-color);*/
-}
-
-/* Hide menu toggle button on desktop */
-.menu-toggle {
-    display: none;
 }
 
 /* Mobile styles */
@@ -179,20 +247,6 @@ footer {
         font-size: 24px;
         cursor: pointer;
         margin-top: 10px;
-    }
-
-    /* Hide navigation by default */
-    .sidebar {
-        display: none;
-    }
-
-    /* Show sidebar when active */
-    .sidebar.active {
-        display: block;
-    }
-
-    .container {
-        flex-direction: column;
     }
 }
 

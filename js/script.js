@@ -44,13 +44,20 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-
-// Responsive menu toggle
+// Dropdown menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
-const sidebar = document.querySelector('.sidebar');
+const dropdownMenu = document.querySelector('.dropdown-menu');
 
-if (menuToggle && sidebar) {
-    menuToggle.addEventListener('click', function() {
-        sidebar.classList.toggle('active');
+if (menuToggle && dropdownMenu) {
+    menuToggle.addEventListener('click', function () {
+        dropdownMenu.classList.toggle('active');
+    });
+
+    // Optional: Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+        if (!menuToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove('active');
+        }
     });
 }
+
