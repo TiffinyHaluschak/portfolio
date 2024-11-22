@@ -44,3 +44,7 @@ cd portfolio
     - Javascript: To add interactivity.
 - Back-end:
     - Deployment: GitHub Pages
+
+## Credits
+- Icons:
+    - Font Awesome (fontawesome.io)
