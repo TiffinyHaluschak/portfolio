@@ -238,6 +238,8 @@ main p {
     font-size: 16px;
     cursor: pointer;
     width: 50%;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
 }
 
 .contact-form button[type="submit"]:hover {
