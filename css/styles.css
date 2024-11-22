@@ -271,7 +271,7 @@ footer {
 
 .icons a:hover {
     color: var(--text-color);
-    background-color: var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 /* Mobile styles */
